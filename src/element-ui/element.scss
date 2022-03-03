@@ -1,0 +1,10 @@
+/* ** TOP SECRET ** */
+
+@import '@/sass/var.scss';
+
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import '~element-ui/packages/theme-chalk/src/index';
+
+// 可以在下面重写 element 样式
+// 统一好管理

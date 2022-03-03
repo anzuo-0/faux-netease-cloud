@@ -1,0 +1,24 @@
+/* ** TOP SECRET ** */
+
+// element-ui 变量
+$--color-primary: #0096ff;
+$--border-color-base: #f0f2f5;
+$--border-color-light: #f0f2f5;
+$--color-text-placeholder: #ddd;
+
+// 自定义变量
+$img-path: '~@/assets/images/';
+$font-base: 14px;
+
+$color-danger: #fb3a3a;
+$color-text: #222;
+$margin: 30px;
+
+// icon垂直居中
+@mixin icon-middle {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: inherit;
+  line-height: inherit;
+  transform: translateY(-0.1em);
+}
