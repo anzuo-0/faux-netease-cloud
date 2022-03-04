@@ -1,8 +1,8 @@
 <!-- 整个页面 -->
 <template>
   <div class="page-view">
-    <page-aside />
     <page-header />
+    <page-aside />
   </div>
 </template>
 
