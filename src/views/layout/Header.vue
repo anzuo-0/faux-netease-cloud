@@ -3,7 +3,7 @@
 <div class="header">
   <div class="title">
        <img src='@/assets/imgs/music.png' alt=''/>
-        <div>网易云音乐</div>
+        <span>网易云音乐</span>
   </div>
   <div class="search">
     <button
@@ -11,13 +11,16 @@
         title='返回'
         @click='handleGoBack'
       />
-    <el-input prefix-icon='el-icon-search' class='search-input'><el-button>搜索</el-button></el-input>
+    <el-input prefix-icon='el-icon-search' type= "text" placeholder="搜索歌曲"/>
   </div>
-  <div class="message">我的信息</div>
+  <div class="message">
+    <img :src="" alt="">
+    <span>{{}}</span>
+  </div>
 </div>
 </template>
 <script>
-// import '@/assets/icons/iconfont'
+
 export default {
   name: 'Header',
   data () {
@@ -35,14 +38,17 @@ export default {
 }
 .title{
   display: flex;
-  font-size: 24px;
+  font-size: 1.2em;
   align-items: center;
   color:aliceblue;
-  width:240px;
+  width:20%;
   img{
     width:28px;
     height:28px;
     margin: 0 8px 0 18px;
+  }
+  span{
+    margin-left: 5px;
   }
 }
 .search{
@@ -55,11 +61,13 @@ export default {
     background-color: rgb(217,59,59);
     margin: 0 8px 0 8px;
   }
-  .el-input{
-      width: 250px;
-      background-color: rgb(217,59,59);
-      border-radius: 20px;
+  .el-input {
+    width: 30%;
   }
 }
-
+.el-input ::v-deep .el-input__inner {
+  background-color: rgb(217,59,59);
+  border: none;
+  border-radius: 20px;
+}
 </style>

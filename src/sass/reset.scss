@@ -120,6 +120,7 @@ body {
 input,
 textarea {
   -webkit-appearance: none;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 /* 低版本安卓文本框层级问题 */
