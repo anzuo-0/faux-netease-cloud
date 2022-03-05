@@ -7,45 +7,63 @@ const routes = [
     path: '/',
     component: LayoutView
   },
-  // {
-  //   path: '/findMusic',
-  //   component: LayoutView,
-  //   meta: {
-  //     title: '发现音乐',
-  //   },
-  //   children: [
-  //     {
-  //       path: '/',
-  //       component: () => import('@/views/FindMusic'),
-  //     },
-  //   ],
-  // },
-  // {
-  //   path: '/myMusic',
-  //   component: LayoutView,
-  //   meta: {
-  //     title: '我的音乐',
-  //   },
-  //   children: [
-  //     {
-  //       path: '/',
-  //       component: () => import('@/views/MyMusic'),
-  //     },
-  //   ],
-  // },
-  // {
-  //   path: '/rank',
-  //   component: LayoutView,
-  //   meta: {
-  //     title: '音乐排行榜',
-  //   },
-  //   children: [
-  //     {
-  //       path: '/',
-  //       component: () => import('@/views/Rank'),
-  //     },
-  //   ],
-  // },
+  {
+    path: '/findmusic',
+    component: LayoutView,
+    meta: {
+      title: '发现音乐'
+    },
+    children: [
+      {
+        path: '/',
+        component: () => import('@/views/home/FindMusic')
+      }
+    ]
+  },
+  {
+    path: '/songmenu',
+    component: LayoutView,
+    meta: {
+      title: '歌单'
+    },
+    children: [{
+      path: '/',
+      component: () => import('@/views/songmenus/SongMenus')
+    }]
+  },
+  {
+    path: '/rank',
+    component: LayoutView,
+    meta: {
+      title: '排行榜'
+    },
+    children: [{
+      path: '/',
+      component: () => import('@/views/rank/Rank')
+    }]
+  },
+  {
+    path: '/singers',
+    component: LayoutView,
+    meta: {
+      title: '歌手'
+    },
+    children: [{
+      path: '/',
+      component: () => import('@/views/singers/Singers')
+    }]
+  },
+  {
+    path: '/mymusic',
+    component: LayoutView,
+    meta: {
+      title: '我的音乐'
+    },
+    children: [{
+      path: '/',
+      component: () => import('@/views/mymusic/MyMusic')
+    }]
+  }
 ]
 
 const router = new VueRouter({

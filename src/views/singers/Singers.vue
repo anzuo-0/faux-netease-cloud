@@ -1,7 +1,7 @@
-<!-- 音乐排行榜 -->
+<!-- 歌手 -->
 <template>
   <div>
-    排行榜
+
   </div>
 </template>
 

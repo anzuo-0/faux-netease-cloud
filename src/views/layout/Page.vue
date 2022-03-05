@@ -2,7 +2,12 @@
 <template>
   <div class="page-view">
     <page-header />
-    <page-aside />
+    <div id="scrollView" class="page-container">
+      <page-aside />
+      <main class="page-main">
+        <router-view />
+      </main>
+    </div>
   </div>
 </template>
 
@@ -22,4 +27,18 @@ export default {
 </script>
 
 <style  scoped>
+.page-view {
+  height: 100%;
+  min-height: 100%;
+}
+.page-container {
+  display: flex;
+}
+.page-aside {
+  width: 216px;
+}
+.page-main {
+  flex: 1;
+  margin: 34px 20px 20px;
+}
 </style>

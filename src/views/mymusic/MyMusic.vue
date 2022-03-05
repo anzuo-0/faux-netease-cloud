@@ -1,7 +1,7 @@
-<!-- 发现音乐 -->
+<!-- 我的音乐 -->
 <template>
-  <div>
-    <div>发现音乐</div>
+  <div class="mymusic">
+    我的音乐
   </div>
 </template>
 
@@ -15,5 +15,7 @@ export default {
 </script>
 
 <style  scoped>
-
+.mymusic{
+  background-color: aqua;
+}
 </style>

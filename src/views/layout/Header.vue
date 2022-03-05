@@ -14,8 +14,8 @@
     <el-input prefix-icon='el-icon-search' type= "text" placeholder="搜索歌曲"/>
   </div>
   <div class="message">
-    <img :src="" alt="">
-    <span>{{}}</span>
+    <img src="" alt="">
+    <span>{{name}}</span>
   </div>
 </div>
 </template>
@@ -24,7 +24,9 @@
 export default {
   name: 'Header',
   data () {
-    return {}
+    return {
+      name: 'czy'
+    }
   }
 }
 </script>
@@ -41,7 +43,7 @@ export default {
   font-size: 1.2em;
   align-items: center;
   color:aliceblue;
-  width:20%;
+  min-width: 200px;
   img{
     width:28px;
     height:28px;
@@ -53,6 +55,7 @@ export default {
 }
 .search{
   flex: 1;
+  min-width: 150px;
   .header-bar__btn{
     width: 24px;
     height: 24px;
