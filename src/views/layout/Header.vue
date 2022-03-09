@@ -9,7 +9,6 @@
     <button
         class='header-bar__btn el-icon-arrow-left'
         title='返回'
-        @click='handleGoBack'
       />
     <el-input prefix-icon='el-icon-search' type= "text" placeholder="搜索歌曲"/>
   </div>

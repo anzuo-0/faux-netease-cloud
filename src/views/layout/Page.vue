@@ -39,6 +39,6 @@ export default {
 }
 .page-main {
   flex: 1;
-  margin: 34px 20px 20px;
+  margin: 28px 20px 20px;
 }
 </style>
