@@ -2,10 +2,11 @@
 <template>
   <div class="findmusic">
     <swiper class="swiper">
-      <swiper-item v-for='(item, index) in banners' :key='index' :style="item.sty">
+      <swiper-item v-for='(item, index) in banners' :key='index'>
         <a :href="item.url">
           <img :src='item.imageUrl' alt='' />
         </a>
+        <span class="slide-title">{{item.typeTitle}}</span>
       </swiper-item>
     </swiper>
   </div>
@@ -37,7 +38,7 @@ export default {
 }
 </script>
 
-<style  scoped>
+<style scoped lang = 'scss'>
 .findmusic{
   margin-left: 100px;
   margin-right: 100px;
@@ -46,4 +47,13 @@ export default {
 .swiper{
   height: 20%;
 }
+.slide-title{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    padding: 5px;
+    border-radius: 8px 0;
+    background-color: rgb(236,65,65);
+  }
 </style>

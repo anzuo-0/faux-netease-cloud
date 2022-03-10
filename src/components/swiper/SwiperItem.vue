@@ -20,6 +20,12 @@ export default {
   width: 52%;
   /* 不缩放 */
   flex-shrink: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0.8);
+  z-index: 0;
+  transition: all ease-out 1.2s;
   img {
     border-radius: 8px;
   }
