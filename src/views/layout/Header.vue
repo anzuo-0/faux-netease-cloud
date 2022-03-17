@@ -33,7 +33,7 @@ export default {
 <style scoped lang='scss'>
 .header{
   display: flex;
-  height: 49px;
+  height: 54px;
   background-color:rgb(236,65,65);
   line-height: 49px;
 }

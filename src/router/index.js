@@ -5,8 +5,18 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    component: LayoutView
+    component: LayoutView,
+    children: [
+      {
+        path: '/',
+        redirect: '/findmusic'
+      }
+    ]
   },
+  // {
+  //   path: '/',
+  //   redirect: '/findmusic'
+  // },
   {
     path: '/findmusic',
     component: LayoutView,

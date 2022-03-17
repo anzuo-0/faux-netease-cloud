@@ -39,15 +39,14 @@ export default {
 </script>
 
 <style scoped lang='scss'>
-.el-menu{
-  width: 240px;
-  height: 580px;
-}
 .navigator {
-  position: relative;
   background: #fff;
   border-right: 1px rgb(197, 197, 197) solid;
-  z-index: 10;
+  overflow: scroll;
+  .el-menu{
+  width: 240px;
+  height: 500px;
+  }
 /* 修改各式webkit浏览器的滚动条样式 */
   &::-webkit-scrollbar {
     width: 6px;

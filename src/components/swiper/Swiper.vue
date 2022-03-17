@@ -41,8 +41,7 @@ export default {
       swiperStyle: {}, // swiper样式
       currentIndex: 1, // 当前的index
       scrolling: false, // 是否正在滚动
-      initial: 0,
-      isButton: false
+      initial: 0
     }
   },
   mounted () {
