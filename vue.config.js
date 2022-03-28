@@ -6,7 +6,7 @@ module.exports = {
         'components': '@/components',
         'views': '@/views',
         'api': '@/api',
-        'sass': '@/sass'
+        'sass': '@/sass',
       }
     }
   }

@@ -31,6 +31,17 @@ const routes = [
     ]
   },
   {
+    path: '/rank',
+    component: LayoutView,
+    meta: {
+      title: '音乐排行榜'
+    },
+    children: [{
+      path: '/',
+      component: () => import('@/views/rank/Rank')
+    }]
+  },
+  {
     path: '/songmenu',
     component: LayoutView,
     meta: {
@@ -42,32 +53,10 @@ const routes = [
     }]
   },
   {
-    path: '/rank',
-    component: LayoutView,
-    meta: {
-      title: '排行榜'
-    },
-    children: [{
-      path: '/',
-      component: () => import('@/views/rank/Rank')
-    }]
-  },
-  {
-    path: '/singers',
-    component: LayoutView,
-    meta: {
-      title: '歌手'
-    },
-    children: [{
-      path: '/',
-      component: () => import('@/views/singers/Singers')
-    }]
-  },
-  {
     path: '/mymusic',
     component: LayoutView,
     meta: {
-      title: '我的音乐'
+      title: '收藏音乐'
     },
     children: [{
       path: '/',

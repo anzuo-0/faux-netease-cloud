@@ -54,6 +54,6 @@ export default {
     color: #fff;
     padding: 5px;
     border-radius: 8px 0;
-    background-color: rgb(236,65,65);
+    background-color: #ac97db;
   }
 </style>
